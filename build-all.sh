@@ -7,9 +7,10 @@ for i in nginx-example-app demo-app gitops-deployment-app fixme-app blue-velvet-
     echo "Build and push $IMAGE"
     podman manifest rm $IMAGE
 
-    podman build --manifest ${IMAGE} \
+    podman build --no-cache --manifest ${IMAGE} \
         -f nginx-example-app.Containerfile \
         --platform linux/amd64,linux/arm64 .
 
     podman manifest push ${IMAGE}
+    podman manifest rm $IMAGE
 done;
