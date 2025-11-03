@@ -1,4 +1,4 @@
-# Red Hat Summit Connect 2024 - Open Tech Quest - OpenShift
+# Red Hat Summit Connect - Open Tech Quest - OpenShift
 
 ![image](nginx-example-app/open_tech_quest_banner.png)
 
